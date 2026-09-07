@@ -1,0 +1,13 @@
+geopandas
+pandas
+numpy
+shapely
+pyogrio
+pyarrow
+rasterio
+scipy
+networkx
+scikit-learn
+xgboost
+joblib
+requests

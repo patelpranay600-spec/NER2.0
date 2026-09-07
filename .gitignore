@@ -1,0 +1,62 @@
+# ==========================================
+# NER Logistics Platform - AGGRESSIVE .GITIGNORE
+# ==========================================
+
+# 1. Global Data Block (Blocks all heavy files anywhere in the project)
+*.csv
+*.parquet
+*.gpkg
+*.json
+*.nc
+*.grib
+*.tif
+*.tiff
+*.zip
+*.rar
+*.db
+*.sqlite
+
+# 2. WHITELIST: ONLY allow the 3 processed production files
+!app/data/processed/master_roads_final_features.gpkg
+!app/data/processed/master_panel_real_targets.parquet
+!app/data/processed/xgboost_production_model.json
+
+# 3. Environments & Caches (Block all local setups)
+env/
+venv/
+.venv/
+geo_clean/
+miniconda3/
+anaconda3/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 4. OS / System Files
+.DS_Store
+Thumbs.db
+
+
+# Block all heavy file types globally
+*.tif
+*.tiff
+*.nc
+*.zip
+*.rar
+*.grib
+*.sqlite
+*.db
+
+# Block specific heavy root files and folders
+heigit_ind_roadsurface_lines.gpkg
+classic_ml_ner_data/
+app/data/processed/hydrology/
+app/data/processed/terrain/
+app/data/raw/
+pmgsy/
+satalite model/
+
+# Whitelist ONLY the 3 files needed for the Streamlit App
+!app/data/processed/master_roads_final_features.gpkg
+!app/data/processed/master_panel_real_targets.parquet
+!app/data/processed/xgboost_production_model.json

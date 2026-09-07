@@ -1,0 +1,11 @@
+streamlit==1.32.0
+pandas
+geopandas
+networkx
+xgboost
+folium
+streamlit-folium
+shapely
+pyogrio
+pyarrow
+fastparquet
