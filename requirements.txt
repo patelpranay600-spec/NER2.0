@@ -9,3 +9,4 @@ shapely
 pyogrio
 pyarrow
 fastparquet
+scikit-learn
