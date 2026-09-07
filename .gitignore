@@ -60,3 +60,8 @@ satalite model/
 !app/data/processed/master_roads_final_features.gpkg
 !app/data/processed/master_panel_real_targets.parquet
 !app/data/processed/xgboost_production_model.json
+
+# Whitelist ONLY the files needed for the Streamlit App
+!app/data/processed/master_roads_final_features.gpkg
+!app/data/processed/current_day_snapshot.parquet
+!app/data/processed/xgboost_production_model.json
