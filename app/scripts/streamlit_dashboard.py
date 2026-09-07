@@ -22,7 +22,8 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROCESSED_DIR = os.path.join(SCRIPT_DIR, "..", "data", "processed")
 
 ROADS_GPKG = os.path.join(PROCESSED_DIR, "master_roads_final_features.gpkg")
-REAL_TARGET_DATA = os.path.join(PROCESSED_DIR, "master_panel_real_targets.parquet")
+# Change this line:
+REAL_TARGET_DATA = os.path.join(PROCESSED_DIR, "current_day_snapshot.parquet")
 MODEL_FILE = os.path.join(PROCESSED_DIR, "xgboost_production_model.json")
 
 # --- Helper Functions ---
